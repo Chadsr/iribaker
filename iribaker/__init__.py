@@ -1,6 +1,6 @@
 import urllib
 import rfc3987
-import urlparse
+import urllib.parse as urlparse
 import logging
 
 logger = logging.getLogger(__name__)
