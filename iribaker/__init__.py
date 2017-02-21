@@ -16,7 +16,7 @@ def to_iri(iri):
     arguments (checks for RFC 3987 compliance and falls back to percent encoding)
     """
     # First decode the IRI if needed
-    if not isinstance(iri, unicode):
+    if not isinstance(iri, str):
         logger.debug("Converting IRI to unicode")
         iri = iri.decode('utf-8')
 
